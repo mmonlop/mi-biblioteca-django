@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block titulo%}{{libro.titulo}}{%endblock%}
+
+{%block contenido%}
+
+
+<ul>
+    <p>AUTOR: {{libro.autor}}</p>
+    <p>GENERO: {{libro.titulo}}</p>
+    <p>ANIO PUBLICACION: {{libro.anio_publicacion}}</p>
+    {% if libro.disponible %}
+    <p>ESTADO: Disponible</p>
+    {%else%}
+    <p>ESTADO: Prestado</p>
+    {%endif%}
+</ul>
+
+<a href="{% url 'principal'%}">Volver</a>
+
+
+
+{%endblock%}

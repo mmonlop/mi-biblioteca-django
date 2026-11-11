@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block titulo%}LIBROS ORDENADOS{%endblock%}
+
+{%block contenido%}
+
+    {%for libro in libros%}
+        <a href=" {%url 'detalle' pk=libro.pk%} ">{{libro.titulo}}</a>
+        <p>AUTOR: {{libro.autor}}</p>
+        <p>GENERO: {{libro.titulo}}</p>
+
+        {% if libro.disponible %}
+        <p>ESTADO: Disponible</p>
+        {%else%}
+        <p>ESTADO: Prestado</p>
+        {%endif%}
+
+    {%empty%}
+        <p>No hay libros en el catalogo.</p>
+    {%endfor%}
+
+
+{%endblock%}
