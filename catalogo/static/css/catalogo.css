@@ -1,0 +1,198 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #2c3e50;
+}
+
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #34495e;
+}
+
+
+/* =========================
+   CATÁLOGO DE LIBROS
+========================= */
+
+.libro {
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.libro:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Título del libro */
+
+.libro a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.libro a:hover {
+    text-decoration: underline;
+}
+
+
+/* Información */
+
+.libro p {
+    margin: 10px 0;
+    color: #555;
+}
+
+
+/* =========================
+   ESTADOS
+========================= */
+
+.disponible {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.prestado {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+
+/* =========================
+   DETALLE DEL LIBRO
+========================= */
+
+.detalle-libro {
+    background: white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-libro p {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* =========================
+   BOTÓN VOLVER
+========================= */
+
+.boton-volver {
+    display: block;
+    width: fit-content;
+
+    margin: 30px auto;
+
+    padding: 12px 20px;
+
+    background: #2980b9;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: background 0.2s;
+}
+
+.boton-volver:hover {
+    background: #1f6391;
+}
+
+
+/* =========================
+   MENSAJE VACÍO
+========================= */
+
+.vacio {
+    text-align: center;
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    max-width: 600px;
+    margin: auto;
+
+    color: #777;
+}
+/* Enlaces generales */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Enlaces de los libros */
+.libro a {
+    display: inline-block;
+    color: #34495e;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.libro a:hover {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+}
+
+/* Botón volver */
+.boton-volver {
+    display: inline-block;
+    padding: 12px 25px;
+
+    background: #34495e;
+    color: white;
+
+    border-radius: 25px;
+    font-weight: bold;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.boton-volver:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
